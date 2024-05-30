@@ -24,9 +24,10 @@ function MovieCard(props) {
 								<div>
 									<button
 										onClick={() =>
-											props.onClickBookMyShowButton()
+											props.onClickBookMyShowButton(item)
 										}
 										className="showBtn"
+
 									>
 										More Details
 									</button>

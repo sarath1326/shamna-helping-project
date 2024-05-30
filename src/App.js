@@ -263,7 +263,8 @@ function App() {
 	const [filteredData, setFilteredData] = useState(movieList);
 	const [showBookingModal, setShowBookingModal] = useState(false);
 	console.log("showBookingModal", showBookingModal);
-	const [currentModalData, setCurrentModalData] = useState(true);
+	const [currentModalData, setCurrentModalData] = useState();
+	
 	console.log("currentModalData", currentModalData);
 
 	const filterByRating = (value) => {
