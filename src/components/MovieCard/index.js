@@ -1,8 +1,14 @@
-import React from "react";
 
+
+import React from "react";
 import { Container } from "./style";
+import { useNavigate } from "react-router-dom";
 
 function MovieCard(props) {
+
+	const navigate=useNavigate()
+
+
 	return (
 		<Container>
 			<div className="movieCardContainer">
@@ -24,7 +30,9 @@ function MovieCard(props) {
 								<div>
 									<button
 										onClick={() =>
-											props.onClickBookMyShowButton(item)
+											
+											navigate("/movie-details",{state:{data:item}})
+
 										}
 										className="showBtn"
 
